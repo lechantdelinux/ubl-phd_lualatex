@@ -2,11 +2,12 @@
 
 ## Why?
 
-Simply because I (and probably some other people) need different compilation options.
+Simply because I (and probably some other people) need different compilation options. Specifically:
+* [Zathura](https://pwmt.org/projects/zathura/) allows for white text on black background, thus reducing eyestrain. It is also lightweight, desktop agnostic, ViM friendly...
 
 ## TODO
 
-- [ ] change pdf viewer to [Zathura](https://pwmt.org/projects/zathura/)
+- [x] change pdf viewer to [Zathura](https://pwmt.org/projects/zathura/)
 - [ ] change compiler to LuaLaTeX
 
 ## What's that below the line?

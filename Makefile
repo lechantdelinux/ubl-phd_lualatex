@@ -11,7 +11,7 @@ ifeq ($(OS), Darwin)
 	PDF_READER = open
 endif
 ifeq ($(OS), Linux)
-	PDF_READER = evince
+	PDF_READER = zathura
 endif
 
 all: pdf

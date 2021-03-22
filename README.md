@@ -6,8 +6,8 @@ Simply because I (and probably some other people) need different compilation opt
 
 ## TODO
 
-- [] change pdf viewer to [Zathura](https://pwmt.org/projects/zathura/)
-- [] change compiler to LuaLaTeX
+- [ ] change pdf viewer to [Zathura](https://pwmt.org/projects/zathura/)
+- [ ] change compiler to LuaLaTeX
 
 ## What's that below the line?
 

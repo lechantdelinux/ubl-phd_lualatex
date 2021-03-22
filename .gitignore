@@ -9,6 +9,7 @@
 *.ind
 *.log
 *.out
+*.pdf
 *.ps
 *.run.xml
 *.synctex.gz

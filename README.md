@@ -1,3 +1,20 @@
+# A LuaLaTeX version of [Université Bretagne-Loire's Ph.D. memoir template](https://gitlab.inria.fr/ed-mathstic/latex-template)
+
+## Why?
+
+Simply because I (and probably some other people) need different compilation options.
+
+## TODO
+
+[] change pdf viewer to [Zathura](https://pwmt.org/projects/zathura/)
+[] change compiler to LuaLaTeX
+
+## What's that below the line?
+
+That is the original project's README. For now these instructions work. I will edit as needed.
+
+---
+
 # ![(French flag)](https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/50px-Flag_of_France.svg.png) Modèle de thèse Doctorat Bretagne Loire
 
 *Explications en français*

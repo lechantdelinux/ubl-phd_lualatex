@@ -12,6 +12,7 @@ Simply because I (and probably some other people) need different compilation opt
 - [x] change compiler to LuaLaTeX
 - [x] fix French quotes broken by LuaLaTeX
 - [ ] fix the if/then/else syntax broken by the French quotes
+- [ ] have fontenc play nice with the mandatory cover font
 
 ## What's that below the line?
 

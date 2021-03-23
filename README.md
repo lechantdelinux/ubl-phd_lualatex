@@ -3,12 +3,13 @@
 ## Why?
 
 Simply because I (and probably some other people) need different compilation options. Specifically:
-* [Zathura](https://pwmt.org/projects/zathura/) allows for white text on black background, thus reducing eyestrain. It is also lightweight, desktop agnostic, ViM friendly...
+* [Zathura](https://pwmt.org/projects/zathura/) allows for white text on black background, thus reducing eyestrain. It is also lightweight, desktop agnostic, Vim friendly...
+* LuaLaTeX is needed for [fontspec](https://ctan.org/pkg/fontspec), which is in turn needed for [lilyglyphs](https://ctan.org/pkg/lilyglyphs)
 
 ## TODO
 
 - [x] change pdf viewer to [Zathura](https://pwmt.org/projects/zathura/)
-- [ ] change compiler to LuaLaTeX
+- [x] change compiler to LuaLaTeX
 
 ## What's that below the line?
 

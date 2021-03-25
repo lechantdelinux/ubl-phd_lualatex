@@ -22,9 +22,9 @@ viewpdf: pdf
 pdf: $(TARGET).pdf
 
 $(TARGET).pdf: $(SOURCE_FILES) $(BIB_FILES) $(FIGURES) these-dbl.cls
-	lualatex -interaction=nonstopmode -jobname=$(TARGET) $(SOURCE_FILES)
+	lualatex --shell-escape -interaction=nonstopmode -jobname=$(TARGET) $(SOURCE_FILES)
 	biber $(TARGET)
-	lualatex -interaction=nonstopmode -jobname=$(TARGET) $(SOURCE_FILES) # For biber
+	lualatex --shell-escape -interaction=nonstopmode -jobname=$(TARGET) $(SOURCE_FILES) # For biber
 
 clean:
 	rm -f $(TARGET).{ps,pdf,bcf,run.xml}

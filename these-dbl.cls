@@ -26,7 +26,7 @@
 
 \LoadClass[twoside,multicol,12pt,a4paper]{report}	% notez le "twoside", essentiellement pour alterner les en-tete et pieds de page gauche et droit si on veut utliser les fancyhead. 
 
-\RequirePackage[utf8]{inputenc} 
+\RequirePackage[utf8]{luainputenc} 
 \RequirePackage[english,french]{babel} % Last language is the default, use \selectlanguage{english} to switch
 \RequirePackage{ifpdf}
 \RequirePackage[usenames,dvipsnames]{color} % pour les couleurs
@@ -68,7 +68,11 @@
 \FrenchFootnotes
 
 % For LuaLaTeX
-%\RequirePackage{fontspec}
+\RequirePackage{fontspec}
+\newfontfamily\arial{Arial}
+\newfontfamily\timesNR{Times New Roman}
+
+\RequirePackage{lyluatex}
 
 % Define commands to set fonts throughout the document
 \newcommand*{\selectfontfrontcover}{\fontfamily{phv}\selectfont}  % Font style used in front cover 
@@ -340,7 +344,8 @@
 {\parbox{17.6cm}{
 \vspace{3.6cm}
 
-\selectfontfrontcover % Set font style for front cover page
+%\selectfontfrontcover % Set font style for front cover page - doesn't work with fontspec
+\arial
 
 {\HugeTwelve \textsc{Th\`{e}se de doctorat de} \\}
 
@@ -373,7 +378,7 @@
 	 \smallTwelve
 	 \textbf{Th\`{e}se pr\'{e}sent\'{e}e et soutenue \`{a} \@lieu, le \@date} \\
 	 \textbf{Unit\'{e} de recherche : \@uniterecherche} \\
-     \textbf{\if\@numthese\empty \else Th\`{e}se \No : \@numthese \fi} % Hide line if no number provided
+     \textbf{\if\@numthese\empty \else  Th\`{e}se \No : \@numthese \fi} % Hide line if no number provided   
 \end{spacing}
 \vspace{1.3cm}
 	\begin{small}

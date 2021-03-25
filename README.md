@@ -4,7 +4,7 @@
 
 Simply because I (and probably some other people) need different compilation options. Specifically:
 * [Zathura](https://pwmt.org/projects/zathura/) allows for white text on black background, thus reducing eyestrain. It is also lightweight, desktop agnostic, Vim friendly...
-* LuaLaTeX is needed for [fontspec](https://ctan.org/pkg/fontspec), which is in turn needed for [lilyglyphs](https://ctan.org/pkg/lilyglyphs)
+* LuaLaTeX is needed for [LyLuaTeX](https://ctan.org/pkg/lyluatex), and also for [fontspec](https://ctan.org/pkg/fontspec), which is in turn needed for [lilyglyphs](https://ctan.org/pkg/lilyglyphs)
 
 ## TODO
 
@@ -13,6 +13,7 @@ Simply because I (and probably some other people) need different compilation opt
 - [x] fix French quotes broken by LuaLaTeX
 - [ ] fix the if/then/else syntax broken by the French quotes
 - [ ] have fontspec play nice with the mandatory cover font
+- [x] add LyLuaTeX
 
 ## What's that below the line?
 

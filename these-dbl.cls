@@ -378,7 +378,7 @@
 	 \smallTwelve
 	 \textbf{Th\`{e}se pr\'{e}sent\'{e}e et soutenue \`{a} \@lieu, le \@date} \\
 	 \textbf{Unit\'{e} de recherche : \@uniterecherche} \\
-     \textbf{\if\@numthese\empty \else  Th\`{e}se \No : \@numthese \fi} % Hide line if no number provided   
+     \ifdefempty{\@numthese}{}{\textbf { Th\`{e}se \No : \@numthese \fi}}
 \end{spacing}
 \vspace{1.3cm}
 	\begin{small}

@@ -11,7 +11,7 @@ Simply because I (and probably some other people) need different compilation opt
 - [x] change pdf viewer to [Zathura](https://pwmt.org/projects/zathura/)
 - [x] change compiler to LuaLaTeX
 - [x] fix French quotes broken by LuaLaTeX
-- [ ] fix the if/then/else syntax broken by the French quotes
+- [x] fix the if/then/else syntax broken by the French quotes
 - [x] have fontspec play nice with the mandatory cover font
 - [x] add LyLuaTeX
 

@@ -14,6 +14,8 @@ Simply because I (and probably some other people) need different compilation opt
 - [x] fix the if/then/else syntax broken by the French quotes
 - [x] have fontspec play nice with the mandatory cover font
 - [x] add LyLuaTeX
+- [ ] get make to run biber
+- [ ] add environments for tables, figures and music extracts
 
 ## What's that below the line?
 

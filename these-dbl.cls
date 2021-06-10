@@ -26,6 +26,8 @@
 
 \LoadClass[twoside,multicol,12pt,a4paper]{report}	% notez le "twoside", essentiellement pour alterner les en-tete et pieds de page gauche et droit si on veut utliser les fancyhead. 
 
+\RequirePackage{pdftexcmds}
+
 \RequirePackage[utf8]{luainputenc} 
 \RequirePackage[english,french]{babel} % Last language is the default, use \selectlanguage{english} to switch
 \RequirePackage{ifpdf}

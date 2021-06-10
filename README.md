@@ -15,11 +15,17 @@ Simply because I (and probably some other people) need different compilation opt
 - [x] have fontspec play nice with the mandatory cover font
 - [x] add LyLuaTeX
 - [ ] get make to run biber
+    - [x] bypass the problem by creating `make tex` and `make bib` commands
 - [ ] add environments for tables, figures and music extracts
+- [ ] deal with all the ugly console messages...
 
 ## What's that below the line?
 
-That is the original project's README. For now these instructions work. I will edit as needed.
+That is the original project's README. For now these instructions work. I will edit as needed. **EDIT:** See below.
+
+### Things I've changed that now work differently:
+
+Run `make tex` to call LuaLaTeX, then `make bib` to run biber, then `make tex` again to get the correct bibliography references. That is a temporary measure (see TODO above) introduced because I need the whole thing to work ASAP, but I might leave it when I get `make` to do what it should in case calling LuaLaTeX and biber separately proves useful in itself, we'll see...
 
 ---
 

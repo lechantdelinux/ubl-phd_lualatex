@@ -1,4 +1,4 @@
-.PHONY: all viewpdf pdf clean
+.PHONY: all viewpdf pdf clean tex bib
 
 TARGET       = main
 SOURCE_FILES = $(TARGET).tex $(wildcard */*.tex)
@@ -31,3 +31,9 @@ clean:
 	for suffix in dvi aux bbl blg toc ind out brf ilg idx synctex.gz log; do \
 		find . -type d -name ".git" -prune -o -type f -name "*.$${suffix}" -print -exec rm {} \;  ; \
 	done
+
+tex: $(SOURCE_FILES)
+	lualatex --shell-escape -interaction=nonstopmode -jobname=$(TARGET) $(SOURCE_FILES)
+
+bib: $(BIB_FILES)
+	biber $(TARGET)

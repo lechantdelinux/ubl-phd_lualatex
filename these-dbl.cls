@@ -86,6 +86,14 @@
 %\renewcommand{\sfdefault}{qpl} 
 
 
+% new figures, etc. land where we want them
+\usepackage{tabularx}
+\usepackage{float}
+\newfloat{zik}{H}{lom}[chapter]
+\floatname{zik}{Extrait musical}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+\usepackage{caption}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% En-tete chap %%%%%%%%%%%%%%%%

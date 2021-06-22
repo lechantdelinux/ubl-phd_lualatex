@@ -37,7 +37,7 @@
 \frontmatter
 \clearemptydoublepage
 \renewcommand{\contentsname}{Table of Contents}
-\tableofcontents %sommaire %table of content
+%\tableofcontents %sommaire %table of content
 %\shorttableofcontents{Sommaire}{0}
 
 \clearemptydoublepage
@@ -56,19 +56,31 @@
 \backmatter
 \input{./Conclusion/conclusion}
 
+\listof{zik}{Liste des extraits musicaux}
+\addcontentsline{toc}{chapter}{Liste des extraits musicaux}
+
+\listoffigures
+\addcontentsline{toc}{chapter}{Liste des figures}
+
+\listoftables
+\addcontentsline{toc}{chapter}{Liste des tables}
+
+\tableofcontents
+
 % Chapitre pour la bibliographie
 % Bibliography chapter
 \clearemptydoublepage
 \phantomsection % To have a correct link in the table of contents
 \addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography
 
 % nocite: Pour citer la totalit\'{e} des r\'{e}f\'{e}rences contenues dans le fichier biblio
 % nocite: In order to cite all the references included biblio
-\nocite{*}
-\printbibliography[heading=primary,keyword=primary]
-\newpage
-\nocite{*}
-\printbibliography[heading=secondary,keyword=secondary]
+%\nocite{*}
+%\printbibliography[heading=primary,keyword=primary]
+%\newpage
+%\nocite{*}
+%\printbibliography[heading=secondary,keyword=secondary]
 
 \clearemptydoublepage
 % Pour avoir la quatrième de couverture sur une page paire
